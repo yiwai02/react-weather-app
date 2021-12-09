@@ -88,6 +88,10 @@ function App() {
         </div>
         <Forcast />
       </div>
+
+    <footer>
+      Opensource at <a href ="https://github.com/yiwai02/react-weather-app.git" target="blank">https://github.com/yiwai02/react-weather-app.git</a>
+    </footer>
     </div>
   );
 }
