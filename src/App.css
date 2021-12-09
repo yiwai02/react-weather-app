@@ -6,23 +6,13 @@
   padding: 50px;
 }
 
-h1 {
-  font-family: "Codystar", cursive;
-  font-weight: 900;
-  color: #0000cd;
-  margin-bottom: 40px;
-}
-
-li {
-  list-style-type: none;
-}
-
 .container {
   border-radius: 35px;
   padding: 50px;
   background: #85f1f7;
   background-size: cover;
   background-position: center;
+  max-width: 960px;
 }
 
 .row {
@@ -32,44 +22,6 @@ li {
 .wrap {
   max-width: 800px;
   margin: 60px auto;
-}
-
-.container {
-  max-width: 960px;
-}
-
-.search-city {
-  text-align: right;
-}
-
-.search-city-input {
-  width: 300px;
-  height: 35px;
-}
-
-.my-weather {
-  text-align: left;
-  margin-left: -19px;
-}
-
-.weatherToday {
-  background: rgb(224 128 163 / 31%);
-  border-radius: 15px;
-  padding-top: 20px;
-  margin: 0 25px;
-}
-
-.weatherToday .col-1 {
-  padding-left: 40px;
-}
-
-.weatherToday .col-3 {
-  padding-left: 60px;
-}
-
-.weatherNow {
-  text-transform: capitalize;
-  font-weight: 900;
 }
 
 .currentDT {
@@ -115,21 +67,4 @@ li {
 .dayTemp {
   text-align: left;
   padding-top: 10px;
-}
-
-.topPicture {
-  width: 40px;
-}
-
-.CurrentDate {
-  text-align: left;
-}
-
-.currentTime {
-  font-size: 45px;
-}
-
-.weatherTodayIcon {
-  color: #d99650;
-  font-size: 70px;
 }
