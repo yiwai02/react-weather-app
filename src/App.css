@@ -1,11 +1,9 @@
 .App {
   font-family: "Delius", cursive;
   text-align: center;
-  background: grey;
-  background-position: center;
-  background-size: cover;
-  background-size: 140%;
+  background: rgb(32, 6, 94);
   color: #363a3e;
+  padding: 50px;
 }
 
 h1 {
@@ -15,12 +13,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-hr {
-  margin-left: 80px;
-  width: 500px;
-  height: 2px;
-}
-
 li {
   list-style-type: none;
 }
@@ -28,7 +20,7 @@ li {
 .container {
   border-radius: 35px;
   padding: 50px;
-  background: lightskyblue;
+  background: #85f1f7;
   background-size: cover;
   background-position: center;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Forcast from "./Forcast";
 
 import './App.css';
 
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="wrap">
+      <div class="container">
         <h1>
           <span className="currentCity">{weatherData.city}</span>
           <hr />
@@ -86,9 +85,8 @@ function App() {
             <div className="col-6 wind-info"></div>
           </div>
         </div>
-        <Forcast />
-      </div>
-
+ </div>
+ 
     <footer>
       Opensource at <a href ="https://github.com/yiwai02/react-weather-app.git" target="blank">https://github.com/yiwai02/react-weather-app.git</a>
     </footer>
