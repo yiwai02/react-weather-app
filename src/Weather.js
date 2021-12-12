@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 
 import Temperature from "./Temperature";
+import DateNow from "./DateNow";
 
 import './Weather.css';
 
@@ -20,6 +21,8 @@ export default function Weather (props){
       imgUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
       wind: response.data.wind.speed,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
+
     });
    }
 
@@ -70,7 +73,7 @@ function handleSubmit(event){
             <div className="col-4 currentDT">
               <ul>
                 Last updated:
-                <li className="currentDate">{weatherData.date}</li>
+                <DateNow date = {weatherData.date} />
                 <li className="currentTime">{weatherData.time}</li>
               </ul>
             </div>
