@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Temperature from "./Temperature";
 import DateNow from "./DateNow";
+import TimeNow from "./TimeNow";
 
 import './Weather.css';
 
@@ -22,6 +23,7 @@ export default function Weather (props){
       wind: response.data.wind.speed,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
+      time: new Date(response.data.dt * 1000),
 
     });
    }
@@ -74,7 +76,7 @@ function handleSubmit(event){
               <ul>
                 Last updated:
                 <DateNow date = {weatherData.date} />
-                <li className="currentTime">{weatherData.time}</li>
+                <TimeNow time = {weatherData.time} />
               </ul>
             </div>
 
