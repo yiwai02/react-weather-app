@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import axios from "axios";
+
+import Temperature from "./Temperature";
+
 import './Weather.css';
 
 export default function Weather (props){
@@ -57,7 +60,7 @@ function handleSubmit(event){
           </div>
           <div className="col-3 my-weather">
             <button type="button" className="btn btn-primary">
-              My weather
+              My city
             </button>
           </div>
         </div>
@@ -73,12 +76,8 @@ function handleSubmit(event){
             </div>
 
             <div className="col-4">
-              <span className="currentTemp">{Math.round(weatherData.temperature)}</span>
-              <span className="tempId">
-                <b>°C</b>
-              </span>
+            <Temperature celsius = {weatherData.temperature} />
             </div>
-
             <div className="col-4">
               <ul>
                 <li>
@@ -114,7 +113,7 @@ function handleSubmit(event){
     return ( 
     <div className="SearchWeather">
             <h1>
-          <span className="currentCity">Loading...</span>
+          <span className="currentCity">Feeling the breeze at...?</span>
           <hr />
         </h1>
         <form className="searchCity" onSubmit={handleSubmit}>
@@ -130,7 +129,7 @@ function handleSubmit(event){
           </div>
           <div className="col-3 my-weather">
             <button type="button" className="btn btn-primary">
-              My weather
+              My city
             </button>
           </div>
         </div>

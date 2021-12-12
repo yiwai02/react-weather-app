@@ -29,19 +29,6 @@
   padding-left: 0;
 }
 
-.currentTemp {
-  font-size: 100px;
-  font-family: "Codystar", cursive;
-  font-weight: 900;
-  color: #0000cd;
-}
-
-.tempId {
-  color: #363a3e;
-  top: -60px;
-  position: relative;
-}
-
 .wind-info {
   text-align: left;
   margin-bottom: -25px;
