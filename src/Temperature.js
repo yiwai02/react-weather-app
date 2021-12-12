@@ -23,7 +23,7 @@ export default function Temperature(props){
         <div>
        <span className="currentTemp">{Math.round(props.celsius)}</span>
        <span className="tempId">
-             <b>°C</b> {" "}| <a href="" onClick={convertToFahr}>°F</a>
+             <b>°C</b> {" "}| <a href="/" onClick={convertToFahr}>°F</a>
         </span>
     </div>
     );
@@ -32,7 +32,7 @@ export default function Temperature(props){
         <div>
        <span className="currentTemp">{Math.round(fahrTemp())}</span>
        <span className="tempId">
-              <a href="" onClick={convertToCel}>°C</a>|{" "}<b>°F</b>
+              <a href="/" onClick={convertToCel}>°C</a>|{" "}<b>°F</b>
         </span>
     </div>
     );
