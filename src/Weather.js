@@ -4,6 +4,7 @@ import axios from "axios";
 import Temperature from "./Temperature";
 import DateNow from "./DateNow";
 import TimeNow from "./TimeNow";
+import WeatherIcon from "./WeatherIcon";
 
 import './Weather.css';
 
@@ -19,7 +20,7 @@ export default function Weather (props){
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      imgUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
+      imgUrl: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
@@ -83,15 +84,9 @@ function handleSubmit(event){
             <div className="col-4">
             <Temperature celsius = {weatherData.temperature} />
             </div>
-            <div className="col-4">
+            <div className="col-4 weatherIcon">
               <ul>
-                <li>
-                  <img
-                    src={weatherData.imgUrl}
-                    alt={weatherData.description}
-                    className="weatherTodayIcon"
-                  />
-                </li>
+               <WeatherIcon code={weatherData.imgUrl} alt={weatherData.description} />
                 <li className="weatherNow">{weatherData.description}</li>
               </ul>
             </div>
