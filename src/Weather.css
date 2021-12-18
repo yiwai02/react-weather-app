@@ -24,7 +24,11 @@ li {
 }
 
 .weatherToday {
-  background: rgb(224 128 163 / 31%);
+  background: linear-gradient(
+    179.2deg,
+    rgb(21, 21, 212) 0.9%,
+    rgb(53, 220, 243) 95.5%
+  );
   border-radius: 15px;
   padding-top: 20px;
   margin: 0 25px;

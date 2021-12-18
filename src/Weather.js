@@ -106,6 +106,9 @@ function handleSubmit(event){
             </div>
           </div>
         </div>
+        <div className="weatherNext5">
+          Hi
+        </div>
         </div>
     );
 }else{

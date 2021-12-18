@@ -1,7 +1,15 @@
 .App {
   font-family: "Delius", cursive;
   text-align: center;
-  background: rgb(32, 6, 94);
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
   color: #363a3e;
   padding: 50px;
   min-height: 100vh;
@@ -10,7 +18,11 @@
 .container {
   border-radius: 35px;
   padding: 50px;
-  background: #85f1f7;
+  background: linear-gradient(
+    -180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   background-size: cover;
   background-position: center;
   max-width: 960px;
@@ -55,4 +67,10 @@
 .dayTemp {
   text-align: left;
   padding-top: 10px;
+}
+
+.weatherNext5 {
+  margin: 45px 25px 0 25px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 15px;
 }
