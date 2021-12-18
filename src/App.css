@@ -4,6 +4,7 @@
   background: rgb(32, 6, 94);
   color: #363a3e;
   padding: 50px;
+  min-height: 100vh;
 }
 
 .container {

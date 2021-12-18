@@ -84,9 +84,9 @@ function handleSubmit(event){
             <div className="col-4">
             <Temperature celsius = {weatherData.temperature} />
             </div>
-            <div className="col-4 weatherIcon">
+            <div className="col-4">
               <ul>
-               <WeatherIcon code={weatherData.imgUrl} alt={weatherData.description} />
+               <WeatherIcon code={weatherData.imgUrl} />
                 <li className="weatherNow">{weatherData.description}</li>
               </ul>
             </div>
@@ -104,7 +104,6 @@ function handleSubmit(event){
                 </li>
               </ul>
             </div>
-            <div className="col-6 wind-info"></div>
           </div>
         </div>
         </div>

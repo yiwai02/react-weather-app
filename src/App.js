@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <div class="container">
         <Weather />
-      </div>
-    <Footer />
+        </div>
+        <Footer />
     </div>
   );
 }
