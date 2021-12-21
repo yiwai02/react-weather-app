@@ -1,5 +1,7 @@
 import React from "react";
-import "./App.css";
+import WeatherIcon from "./WeatherIcon";
+
+import "./Forcast.css";
 
 export default function Forcast() {
   return (
@@ -9,12 +11,12 @@ export default function Forcast() {
 
         <div className="col-4">
           <span className="dayImg">
-            <i className="fas fa-cloud"></i>
+            <WeatherIcon code={"01n"} size={30} />
           </span>
         </div>
 
         <div className="col-4 dayTemp">
-          <span>18°</span>|<span>10°</span>
+          <span>18°</span> | <span>10°</span>
         </div>
       </div>
     </div>

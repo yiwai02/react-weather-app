@@ -10,7 +10,7 @@
     rgb(19, 30, 37) 24.5%,
     rgb(19, 30, 37) 66%
   );
-  color: #363a3e;
+  color: #CDDC39;
   padding: 50px;
   min-height: 100vh;
 }
@@ -46,31 +46,4 @@
   text-align: left;
   margin-bottom: -25px;
   padding-top: 10px;
-}
-
-.weatherNext5 {
-  margin: 45px 25px 0 25px;
-  background: rgb(255 213 4 / 31%);
-  border-radius: 15px;
-}
-
-.weatherNext5 .row {
-  padding: 20px 0px 0px 0px;
-  font-weight: 900;
-}
-
-.dayDay {
-  text-align: right;
-  padding-top: 10px;
-}
-
-.dayTemp {
-  text-align: left;
-  padding-top: 10px;
-}
-
-.weatherNext5 {
-  margin: 45px 25px 0 25px;
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border-radius: 15px;
 }

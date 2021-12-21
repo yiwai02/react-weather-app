@@ -45,7 +45,6 @@ const codeColor = {
 };
 
 const defaults ={
-  size: 60,
   animate: true
 }
     return(
@@ -54,7 +53,7 @@ const defaults ={
     <ReactAnimatedWeather
     icon={codeMapping[props.code]}
     color={codeColor[props.code]}
-    size={defaults.size}
+    size={props.size}
     animate={defaults.animate}
   />
   </li>

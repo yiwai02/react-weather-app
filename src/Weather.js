@@ -5,6 +5,7 @@ import Temperature from "./Temperature";
 import DateNow from "./DateNow";
 import TimeNow from "./TimeNow";
 import WeatherIcon from "./WeatherIcon";
+import Forcast from "./Forcast";
 
 import './Weather.css';
 
@@ -86,7 +87,7 @@ function handleSubmit(event){
             </div>
             <div className="col-4">
               <ul>
-               <WeatherIcon code={weatherData.imgUrl} />
+               <WeatherIcon code={weatherData.imgUrl} size={60} />
                 <li className="weatherNow">{weatherData.description}</li>
               </ul>
             </div>
@@ -106,9 +107,7 @@ function handleSubmit(event){
             </div>
           </div>
         </div>
-        <div className="weatherNext5">
-          Hi
-        </div>
+          <Forcast />
         </div>
     );
 }else{
