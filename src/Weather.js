@@ -14,7 +14,6 @@ export default function Weather (props){
    let [city, setCity] = useState("");
 
    function handleResponse(response){
-       console.log(response);
       setWeatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -31,7 +30,6 @@ export default function Weather (props){
    }
 
    function firstWeather(){
-       console.log(city);
        let apiKey = "59990109c1a723b5b9dd0b82ee870827";
        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
@@ -107,7 +105,7 @@ function handleSubmit(event){
             </div>
           </div>
         </div>
-          <Forcast />
+          <Forcast coordinates={weatherData.coordinates} />
         </div>
     );
 }else{
