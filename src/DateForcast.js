@@ -15,6 +15,7 @@ export default function DateForcast(props){
 
     return(
         <div>
+          <div className="row">
         <div className="col-4 dayDay">{day()}</div>
 
             <div className="col-4">
@@ -24,6 +25,7 @@ export default function DateForcast(props){
             </div>
             <div className="col-4 dayTemp">
               <span>{Math.round(props.data.temp.max)}°</span> | <span>{Math.round(props.data.temp.min)}°</span>
+            </div>
             </div>
         </div>
     );

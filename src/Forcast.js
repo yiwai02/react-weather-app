@@ -17,9 +17,7 @@ export default function Forcast(props) {
     console.log(forcast);
     return (
         <div className="weatherNext5">
-          <div className="row">
             <DateForcast data = {forcast[0]} />
-          </div>
         </div>
       );
     }else{
