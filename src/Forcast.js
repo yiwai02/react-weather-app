@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect, useLayoutEffect} from "react";
 import DateForcast from "./DateForcast";
 import axios from "axios";
 
@@ -7,6 +7,10 @@ import "./Forcast.css";
 export default function Forcast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forcast, setForcast] = useState(null);
+
+useEffect(() => {
+  setLoaded(false);
+},[props.coordinates]);
 
   function handleResponse(response){
     setForcast(response.data.daily);
@@ -17,7 +21,17 @@ export default function Forcast(props) {
     console.log(forcast);
     return (
         <div className="weatherNext5">
-            <DateForcast data = {forcast[0]} />
+          {forcast.map(function(dailyForcast, index){
+            if (index < 5){
+            return(
+              <span key={index}>
+            <DateForcast data = {dailyForcast} />
+            </span>
+            );}
+            else{
+              return null
+            }
+  })}
         </div>
       );
     }else{

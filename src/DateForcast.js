@@ -6,7 +6,7 @@ import "./DateForcast.css";
 export default function DateForcast(props){
   
   function day(){
-  let date = new Date(props.dt * 1000);
+  let date = new Date(props.data.dt * 1000);
   let day = date.getDay();
   let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -15,9 +15,8 @@ export default function DateForcast(props){
 
     return(
         <div>
-          <div className="row">
+        <div className="row">
         <div className="col-4 dayDay">{day()}</div>
-
             <div className="col-4">
               <span className="dayImg">
                 <WeatherIcon code={props.data.weather[0].icon} size={30} />
