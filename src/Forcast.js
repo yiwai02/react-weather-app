@@ -22,7 +22,7 @@ useEffect(() => {
     return (
         <div className="weatherNext5">
           {forcast.map(function(dailyForcast, index){
-            if (index < 5){
+            if (0 < index && index< 6){
             return(
               <span key={index}>
             <DateForcast data = {dailyForcast} />

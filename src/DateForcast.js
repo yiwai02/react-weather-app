@@ -7,10 +7,10 @@ export default function DateForcast(props){
   
   function day(){
   let date = new Date(props.data.dt * 1000);
-  let day = date.getDay();
+  let currentDay = date.getDay();
   let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-  return days[day];
+  return days[currentDay];
 }
 
     return(
@@ -23,7 +23,7 @@ export default function DateForcast(props){
               </span>
             </div>
             <div className="col-4 dayTemp">
-              <span>{Math.round(props.data.temp.max)}°</span> | <span>{Math.round(props.data.temp.min)}°</span>
+              <span>{Math.round(props.data.temp.max)}°</span> |{" "} <span>{Math.round(props.data.temp.min)}°</span>
             </div>
             </div>
         </div>
