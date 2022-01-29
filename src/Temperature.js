@@ -5,10 +5,10 @@ import './Temperature.css'
 export default function Temperature(props){
     const [unit, setUnit] = useState("celsius");
     
-    function convertToFahr(event){
-        event.preventDefault();
-        setUnit("fahr");
-    }
+  //  function convertToFahr(event){
+  //       event.preventDefault();
+  //       setUnit("fahr");
+  //  }
 
     function convertToCel(event){
         event.preventDefault();
@@ -23,7 +23,7 @@ export default function Temperature(props){
         <div>
        <span className="currentTemp">{Math.round(props.celsius)}</span>
        <span className="tempId">
-             <b>°C</b> {" "}| <a href="/" onClick={convertToFahr}>°F</a>
+             <b>°C</b> 
         </span>
     </div>
     );
