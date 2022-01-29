@@ -61,12 +61,7 @@ function handleSubmit(event){
               className="search-city-input"
               onChange={handleCityChange}
             />
-            <input type="submit" className="btn btn-secondary" value="GO!" />
-          </div>
-          <div className="col-3 my-weather">
-            <button type="button" className="btn btn-primary">
-              My city
-            </button>
+            <input type="submit" className="btn btn-primary" value="GO!" />
           </div>
         </div>
         </form>
@@ -124,12 +119,7 @@ function handleSubmit(event){
               className="search-city-input"
               onChange={handleCityChange}
             />
-            <input type="submit" className="btn btn-secondary" value="GO!" />
-          </div>
-          <div className="col-3 my-weather">
-            <button type="button" className="btn btn-primary">
-              My city
-            </button>
+            <input type="submit" className="btn btn-primary" value="GO!" />
           </div>
         </div>
         </form>
