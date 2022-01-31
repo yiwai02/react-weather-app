@@ -61,7 +61,7 @@ function handleSubmit(event){
               className="search-city-input"
               onChange={handleCityChange}
             />
-            <input type="submit" className="btn btn-primary" value="GO!" />
+            <input type="submit" className="btn btn-primary go-button" value="GO!" />
           </div>
         </div>
         </form>
@@ -119,7 +119,7 @@ function handleSubmit(event){
               className="search-city-input"
               onChange={handleCityChange}
             />
-            <input type="submit" className="btn btn-primary" value="GO!" />
+            <input type="submit" className="btn btn-primary go-button" value="GO!" />
           </div>
         </div>
         </form>

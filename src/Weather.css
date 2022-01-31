@@ -14,8 +14,15 @@ li {
 }
 
 .search-city-input {
-  width: 300px;
-  height: 35px;
+  border: none;
+  padding: 15px 60px 15px 10px;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 6px;
+  color: #0000cd;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
 }
 
 .my-weather {
@@ -62,4 +69,8 @@ li {
 .weatherTodayIcon {
   color: #d99650;
   font-size: 70px;
+}
+
+.go-button {
+  padding: 12px 30px;
 }
